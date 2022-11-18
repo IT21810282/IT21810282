@@ -37,3 +37,22 @@ class RegisteredUser:public User{
 			cout<<"Payment submitted"<<endl;
 		}
 };
+
+
+int main(){
+	
+	User us1;
+	us1.login();
+	us1.logout(); 
+	
+	RegisteredUser rUser1;
+	rUser1.login();
+	rUser1.CreateEvent();
+	rUser1.UpdateEvent();
+	rUser1.DeleteEvent();
+	rUser1.viewInvoice();
+	rUser1.makePayment();
+	rUser1.logout();
+	
+	return 0;
+}
