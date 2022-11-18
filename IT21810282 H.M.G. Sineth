@@ -1,0 +1,39 @@
+class User {
+	protected:
+		int userID;
+		string firstName;
+		string lastName;
+		int contactNo;
+		string emailAddress;
+		string password;
+	public:
+		void login(){
+			cout<<"Enter email: ";
+			cin>> emailAddress; 
+			cout<<"Enter password: ";
+			cin>> password; 
+			cout<<"Welcome! You are logged in"<<endl;		
+		}
+		void logout(){
+			cout<<"You are logged out!"<<endl;
+		}
+};
+
+class RegisteredUser:public User{
+	public:
+		void CreateEvent(){
+			cout<<"Event created!"<<endl;
+		}
+		void UpdateEvent(){
+			cout<<"Event Updated";
+		}
+		void DeleteEvent(){
+			cout<<"Event Deleted";
+		}
+		void viewInvoice(){
+			cout<<"Event Invoice:"<<endl;
+		}
+		void makePayment(){
+			cout<<"Payment submitted"<<endl;
+		}
+};
